@@ -1,0 +1,27 @@
+<html>
+  <head>
+   
+  
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+          <audio src="assets/background.mp3" autoplay
+          preload></audio>
+            <img id="skyTexture"src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+          </a-assets>
+      <a-light type="ambient" color="#222"></a-light>
+      <audio src="assets/background.mp3" autoplay="true"position="-3 1 -4"></audio>
+      <a-sky src="#skyTexture"></a-sky>
+      <a-entity
+  text="value: Welcome to the lake!; color: #BBB"
+  position="0.25 1.5 -1"
+  scale="2.5 2.5 2.5"></a-entity>
+  
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 2 2"></a-light>
+      
+    </a-scene>
+  </body>
+</html>
